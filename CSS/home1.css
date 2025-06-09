@@ -1,0 +1,309 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background: #87a9c59a;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.logo img {
+    width: 150px;
+    height: 100px;
+}
+
+/* Sidebar */
+.sidebar {
+   
+    width: 350px;
+    height: calc(100vh - 70px);
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    overflow-y: auto; /* Enables scrolling */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #1e1e2f;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+}
+
+#toggleProfile {
+    background: #1abc9c;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#toggleProfile:hover {
+    background: #16a085;
+}
+
+/* Profile Details */
+.profile-details {
+    margin-top: 15px;
+    background: #34495e;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.profile-details p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+#updatePassword {
+    background: #e74c3c;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#updatePassword:hover {
+    background: #c0392b;
+}
+
+/* Hide profile details initially */
+.hidden {
+    display: none;
+}
+
+/* Main Content */
+.main-content {
+   width: 100%;
+   padding: 20px;
+    overflow-y: auto;
+    background: #1e1e2f; /* Dark, high-tech background */
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section h1 {
+    color: #1abc9c;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hero-section p {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-actions button {
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#startTradingBtn {
+    background: #1abc9c;
+}
+
+#startTradingBtn:hover {
+    background: #16a085;
+    transform: scale(1.05);
+}
+
+#viewDashboardBtn {
+    background: #3498db;
+}
+
+#viewDashboardBtn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Quick Stats Section */
+.quick-stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.stat-card {
+    flex: 1;
+    background: #34495e;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    color: #1abc9c;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    padding: 30px 20px;
+    background: #2c3e50;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-section h2 {
+    color: #1abc9c;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#joinNowBtn {
+    padding: 12px 40px;
+    font-size: 16px;
+    background: #e74c3c;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#joinNowBtn:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+
+.hidden {
+    display: none;
+}
+
+.profile-section {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+input {
+    display: block;
+    width: 90%;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.dashboard-buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+#cancelPasswordBtn {
+    background-color: #dc3545;
+    border-radius: 10px;
+}
+
+#cancelPasswordBtn:hover {
+    background-color: #a71d2a;
+}
+
+
+/* Logout Container in Sidebar */
+.logout-container {
+    margin-top: 15px;
+}
+
+.logout-container button {
+    width: 100%;
+    padding: 10px;
+    background: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+
+}
+
+.logout-container button:hover {
+    background: #c0392b;
+}
+
+
+.freepikimage1{
+    width: 100%;
+    height: 100vw;
+}

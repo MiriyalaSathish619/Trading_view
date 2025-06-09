@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="625" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g transform="scale(1.15)"> <!-- Slightly larger scaling -->
+        
+        <!-- Lock with Keyhole (Moderate Size Increase) -->
+        <rect x="270" y="220" width="180" height="140" fill="#1976D2" rx="15"/>
+        <circle cx="360" cy="260" r="26" fill="#FFFFFF"/>
+        <rect x="352" y="260" width="12" height="28" fill="#000000"/>
+
+        <!-- Question Mark inside a Shield (Slightly Increased) -->
+        <polygon points="130,60 240,110 240,200 130,250 20,200 20,110" fill="#FF9800"/>
+        <text x="115" y="190" fill="white" font-size="90" font-weight="bold">?</text>
+
+        <!-- Email Verification Icon (Balanced Size) -->
+        <rect x="570" y="40" width="160" height="110" fill="#4CAF50" rx="12"/>
+        <polygon points="570,40 650,110 730,40" fill="#FFFFFF"/>
+<!-- User Thinking Pose (Slightly Smaller & Moved Up) -->
+<circle cx="100" cy="370" r="24" fill="#673AB7"/> <!-- Head -->
+<rect x="88" y="395" width="24" height="50" fill="#673AB7"/> <!-- Body -->
+<line x1="88" y1="445" x2="76" y2="480" stroke="#673AB7" stroke-width="4"/> <!-- Left Leg -->
+<line x1="112" y1="445" x2="124" y2="480" stroke="#673AB7" stroke-width="4"/> <!-- Right Leg -->
+<line x1="76" y1="480" x2="124" y2="480" stroke="#673AB7" stroke-width="4"/> <!-- Feet Connection -->
+
+<!-- Animated Thinking Bubble (Smaller & Moved Up) -->
+<circle cx="130" cy="300" r="6" fill="#000000">
+    <animate attributeName="cy" values="300;295;300" dur="1s" repeatCount="indefinite"/>
+</circle>
+<circle cx="150" cy="280" r="10" fill="#000000">
+    <animate attributeName="cy" values="280;275;280" dur="1s" repeatCount="indefinite"/>
+</circle>
+<circle cx="170" cy="260" r="14" fill="#000000">
+    <animate attributeName="cy" values="260;255;260" dur="1s" repeatCount="indefinite"/>
+</circle>
+
+
+      <!-- "Forgot Password?" Text (Moved Up) -->
+<text x="420" y="500" fill="#000000" font-size="34" font-family="Arial" font-weight="bold" opacity="1">
+    <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    Forgot Password?
+</text>
+
+        <!-- Animated Circle Timer (Reduced Proportionally) -->
+        <circle cx="640" cy="310" r="90" stroke="#FF9800" stroke-width="10" fill="none">
+            <animate attributeName="stroke-dasharray" values="565,565; 0,565" dur="10s" repeatCount="indefinite"/>
+        </circle>
+        <text x="600" y="320" fill="#FF9800" font-size="38" font-weight="bold">10s</text>
+
+    </g>
+
+    <!-- Whole SVG Animation -->
+    <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="3s" repeatCount="indefinite"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg width="1200" height="100" viewBox="0 0 1200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main gradient-filled shape -->
+  <path d="M0 0H1100L1200 100H100L0 0Z" fill="url(#gradient)"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="1200" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#0479C7"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Top-left dots -->
+  <circle cx="20" cy="10" r="3" fill="#00D4FF"/>
+  <circle cx="30" cy="10" r="3" fill="#00D4FF"/>
+  <circle cx="40" cy="10" r="3" fill="#00D4FF"/>
+  
+  <!-- Top horizontal line -->
+  <line x1="50" y1="10" x2="1100" y2="10" stroke="#00D4FF" stroke-width="2"/>
+  
+  <!-- Bottom-left angled lines -->
+
+  
+  <!-- Bottom-right line and dot -->
+  <line x1="150" y1="90" x2="1150" y2="90" stroke="#00D4FF" stroke-width="2"/>
+  <circle cx="1180" cy="90" r="3" fill="#00D4FF"/>
+</svg>

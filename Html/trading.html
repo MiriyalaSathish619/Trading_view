@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading View Sign Up/Sign In</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <!-- GSAP Core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- ScrollTrigger Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Side (Text Area) -->
+        <div class="left-section">
+            <div class="auth-header">
+                <div>
+
+                    <h2></h2>
+                    <div class="blob"></div>
+
+                </div>
+
+                <p class="trading-info"></p>
+            </div>
+            <!-- Placeholder for vector image -->
+            <div class="vector">
+                <img id="leftImage" src="../images/login-vector.jpg" alt="Form Image">
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="form-container">
+                <!-- Toggle Buttons -->
+                <div class="toggle-buttons" id="toggleButtons">
+                    <button id="signInBtn" class="toggle-btn active">Sign In</button>
+                    <button id="signUpBtn" class="toggle-btn">Sign Up</button>
+                    <div class="underline"></div>
+                </div>
+
+
+                <!-- Sign In Form -->
+                <form id="signInForm" class="auth-form">
+                    <div class="form-group">
+                        <input type="text" id="signin-identifier" name="signin-identifier" required>
+                        <label for="signin-identifier">Trading View ID / Phone / Email </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signin-password" name="signin-password">
+                        <label for="signin-password">Password </label>
+                        <span class="toggle-password" data-target="signin-password">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button type="submit" class="submit-btn">Sign In</button>
+                      </div>
+                    <!-- Forgot Password Link -->
+                    <p class="forgot-link">
+                        <a href="#" id="forgotPasswordLink" class="forgot-password">Forgot your password?</a>
+                    </p>
+                </form>
+
+
+
+                <form id="signUpForm" class="auth-form hidden">
+                    <!-- Username -->
+                    <div class="form-group">
+                        <input type="text" id="username" name="username" required>
+                        <label for="username">Username </label>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email </label>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone">Phone Number </label>
+                    </div>
+
+                    <!-- Trading View ID -->
+                    <div class="form-group">
+                        <input type="text" id="tradingViewId" name="tradingViewId" required>
+                        <label for="tradingViewId">Trading View ID </label>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group password-container">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Password </label>
+                        <span class="toggle-password" data-target="password">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+
+                    <!-- Repeat Password -->
+                    <div class="form-group password-container">
+                        <input type="password" id="repeatPassword" name="repeatPassword" required>
+                        <label for="repeatPassword">Repeat Password </label>
+                        <span class="toggle-password" data-target="repeatPassword">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+                    <!-- Referral ID (Optional) -->
+                    <div class="form-group">
+                        <input type="text" id="referralId" name="referralId">
+                        <label for="referralId">Referral ID (Optional)</label>
+                    </div>
+                      <div class="btn-wrapper">
+
+                          <button type="submit" class="submit-btn">Sign Up</button>
+                      </div>
+                    <!-- Sign Up Button -->
+                </form>
+
+                <!-- Forgot Password Form (Initially Hidden) -->
+                <form id="forgotPasswordForm" class="auth-form hidden centered-forms" class="forgot">
+                    <h3>Forgot Password</h3>
+
+
+                    <div class="form-group">
+                        <input type="text" id="forgot-identifier" name="forgot-identifier" required>
+                        <label for="forgot-identifier">Email / TradingView ID / Phone <span
+                                class="required-asterisk">*</span></label>
+                    </div>
+
+
+                    <div class="btn-wrapper">
+                        <button type="submit" class="submit-btn" id="forgotSubmitBtn">Submit</button>
+
+                    </div>
+
+
+
+                    <!-- Back to Sign In -->
+                    <p class="forgot-link">
+                        <a href="#" id="backToSignIn1">Back to Sign In</a>
+                    </p>
+                </form>
+                <!-- Reset Password Form (Initially Hidden) -->
+                <form id="resetPasswordForm" class="auth-form hidden ">
+                    <h3>Reset Password</h3>
+
+
+                    <div class="form-group">
+                        <input type="password" id="new-password" name="new-password" required>
+                        <label for="new-password">New Password </label>
+                        <span class="toggle-password" data-target="new-password">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <label for="confirm-password">Confirm New Password <span
+                                class="required-asterisk">*</span></label>
+                                <span class="toggle-password" data-target="confirm-password">
+                                    <i class="fa-solid fa-eye"></i>
+                                </span>
+                    </div>
+
+                        <div class="btn-wrapper">
+
+                            <button type="submit" class="submit-btn" id="resetSubmitBtn">Reset Password</button>
+                        </div>
+
+
+                    <!-- Back to Sign In -->
+                    <p class="forgot-link">
+                        <a href="#" id="backToSignIn2">Back</a>
+                    </p>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/validation.js"></script>
+    <script src="../JS/integrations/signup_integration.js"></script>
+    <script src="../JS/integrations/signin_integrations.js"></script>
+    <script src="../JS/integrations/forgot_integrations.js"></script>
+</body>
+
+</html>

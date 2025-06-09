@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="600" viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="3s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="scale" values="1; 1.02; 1" dur="3s" repeatCount="indefinite"/>
+
+    <!-- Candlestick Chart -->
+    <rect x="20" y="120" width="25" height="100" fill="#4CAF50"/>
+    <line x1="32.5" y1="80" x2="32.5" y2="240" stroke="#4CAF50" stroke-width="4.5"/>
+    <rect x="70" y="160" width="25" height="80" fill="#F44336"/>
+    <line x1="82.5" y1="140" x2="82.5" y2="220" stroke="#F44336" stroke-width="4.5"/>
+    <rect x="120" y="100" width="25" height="120" fill="#4CAF50"/>
+    <line x1="132.5" y1="60" x2="132.5" y2="240" stroke="#4CAF50" stroke-width="4.5"/>
+    <rect x="170" y="180" width="25" height="60" fill="#F44336"/>
+    <line x1="182.5" y1="160" x2="182.5" y2="220" stroke="#F44336" stroke-width="4.5"/>
+
+    <!-- Downward Trend Line with Dots Animation -->
+<polyline points="20,100 171.875,180 323.75,140 476.75,200 628.625,160 920,220" fill="none" stroke="#FFD700" stroke-width="5.625">
+    <animate attributeName="stroke-dasharray" from="0,961" to="961,0" dur="2s" repeatCount="indefinite"/>
+</polyline>
+<circle cx="20" cy="100" r="6.75" fill="#FFD700"/>
+<circle cx="171.875" cy="180" r="6.75" fill="#FFD700"/>
+<circle cx="323.75" cy="140" r="6.75" fill="#FFD700"/>
+<circle cx="476.75" cy="200" r="6.75" fill="#FFD700"/>
+<circle cx="628.625" cy="160" r="6.75" fill="#FFD700"/>
+<circle cx="920" cy="220" r="9" fill="#FFD700"/>
+
+<!-- Enlarged Profile Circle with Human Icon -->
+<circle cx="887.5" cy="100" r="84.375" fill="#1E88E5"/>
+<circle cx="887.5" cy="80" r="33.75" fill="#fff"/>
+<rect x="831.25" y="107.5" width="112.5" height="60" fill="#fff" rx="11.25"/>
+
+<!-- Bigger Secure Lock with Keyhole -->
+<rect x="811.25" y="270" width="168.75" height="180" fill="#03A9F4" rx="22.5"/>
+<circle cx="895.625" cy="330" r="30.375" fill="#fff"/>
+<rect x="886.25" y="330" width="18.75" height="30" fill="#000"/>
+
+    <!-- Full-Body Man -->
+    <circle cx="62.5" cy="450" r="39.375" fill="#1976D2"/>
+    <rect x="25" y="485" width="75" height="80" fill="#1976D2"/>
+    <line x1="25" y1="565" x2="-12.5" y2="625" stroke="#1976D2" stroke-width="9"/>
+    <line x1="100" y1="565" x2="137.5" y2="625" stroke="#1976D2" stroke-width="9"/>
+    <line x1="-12.5" y1="625" x2="137.5" y2="625" stroke="#1976D2" stroke-width="9"/>
+
+    <!-- Typing Animation -->
+    <rect x="137.5" y="400" width="225" height="100" fill="#D32F2F" rx="11.25"/>
+    <line x1="100" y1="450" x2="137.5" y2="450" stroke="#000" stroke-width="4.5">
+        <animate attributeName="y1" values="450;445;450" dur="1s" repeatCount="indefinite"/>
+        <animate attributeName="y2" values="450;445;450" dur="1s" repeatCount="indefinite"/>
+    </line>
+    <line x1="137.5" y1="450" x2="137.5" y2="475" stroke="#000" stroke-width="4.5">
+        <animate attributeName="y1" values="450;445;450" dur="1s" repeatCount="indefinite"/>
+        <animate attributeName="y2" values="475;470;475" dur="1s" repeatCount="indefinite"/>
+    </line>
+
+    <!-- "Sign In" Text with Animated Effect -->
+    <text x="725" y="580" fill="#000000" font-size="47.25" font-family="Arial" font-weight="bold" opacity="1">
+        <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+        Sign In
+    </text>
+
+    <!-- Trading View Logo/Title -->
+    <text x="375" y="50" fill="#000000" font-size="40.5" font-family="Arial" font-weight="bold" opacity="1">
+        <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite"/>
+        Trading View
+    </text>
+
+<!-- Larger Bar Chart with More Bars -->
+<rect x="20" width="37.5" fill="#1976D2">
+    <animate attributeName="height" values="60;20;80;40;60" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="310;350;290;330;310" dur="5s" repeatCount="indefinite"/>
+</rect>
+<rect x="70" width="37.5" fill="#1976D2">
+    <animate attributeName="height" values="40;90;30;70;40" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+    <animate attributeName="y" values="330;280;340;300;330" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+</rect>
+<rect x="120" width="37.5" fill="#1976D2">
+    <animate attributeName="height" values="80;50;100;30;80" dur="6s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="y" values="290;320;270;340;290" dur="6s" repeatCount="indefinite" begin="1s"/>
+</rect>
+<rect x="170" width="37.5" fill="#1976D2">
+    <animate attributeName="height" values="50;70;20;90;50" dur="5s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="y" values="320;300;350;280;320" dur="5s" repeatCount="indefinite" begin="1.5s"/>
+</rect>
+<rect x="220" width="37.5" fill="#1976D2">
+    <animate attributeName="height" values="70;30;90;40;70" dur="5s" repeatCount="indefinite" begin="2s"/>
+    <animate attributeName="y" values="300;340;280;330;300" dur="5s" repeatCount="indefinite" begin="2s"/>
+</rect>
+
+<!-- X-Axis (Baseline) -->
+<line x1="20" y1="370" x2="290" y2="370" stroke="#000" stroke-width="2.25"/>
+<!-- Y-Axis -->
+<line x1="21.25" y1="270" x2="21.25" y2="370" stroke="#000" stroke-width="2.25"/>
+
+<!-- Enlarged Pie Chart (Shifted Further Right & Up) -->
+<circle cx="530" cy="450" r="144" fill="#4CAF50">
+    <animate attributeName="r" values="0;144;144" dur="2s" repeatCount="indefinite"/>
+</circle>
+<path d="M 530 450 L 674 450 A 144 144 0 0 1 530 594 Z" fill="#F44336">
+    <animate attributeName="opacity" values="0;1;1" dur="2s" repeatCount="indefinite"/>
+</path>
+<path d="M 530 450 L 530 594 A 144 144 0 0 1 386 450 Z" fill="#FFD700">
+    <animate attributeName="opacity" values="0;1;1" dur="2s" repeatCount="indefinite"/>
+</path>
+
+
+    <!-- Market Ticker -->
+    <rect x="375" y="220" width="325" height="60" fill="#333333" rx="5.625"/>
+    <text x="443.75" y="260" fill="#00FF00" font-size="22.5" font-family="Arial">
+        NIFTY 50: 24,750
+        <animate attributeName="textContent" values="NIFTY 50: 24,750;NIFTY 50: 24,780;NIFTY 50: 24,760;NIFTY 50: 24,750" dur="4s" repeatCount="indefinite"/>
+    </text>
+
+ <!-- Mini Line Graph -->
+<polyline points="850,500 875,480 900,510 925,490 950,520" fill="none" stroke="#4CAF50" stroke-width="4.5">
+    <animate attributeName="stroke-dasharray" from="0,125" to="125,0" dur="2s" repeatCount="indefinite"/>
+</polyline>
+<circle cx="850" cy="500" r="4.5" fill="#4CAF50"/>
+<circle cx="875" cy="480" r="4.5" fill="#4CAF50"/>
+<circle cx="900" cy="510" r="4.5" fill="#4CAF50"/>
+<circle cx="925" cy="490" r="4.5" fill="#4CAF50"/>
+<circle cx="950" cy="520" r="4.5" fill="#4CAF50"/>
+    </g>
+</svg>
